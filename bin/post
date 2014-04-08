@@ -94,7 +94,7 @@ done
 ((noop)) && echo "Noop is ON"
 
 manifest_file=${manifest_file:-$0.manif}
-esg_dist_url="rainbow.llnl.gov:/pcmdi_web/dist$( ((devel == 1)) && echo "/devel" || echo "")"
+esg_dist_url="dist.ceda.ac.uk:esgf_web/dist$( ((devel == 1)) && echo "/devel" || echo "")"
 current_dir=${current_dir:="esgf-security"}
 
 [ -n "${xfer_user}" ] && xfer_user+="@" && echo "[${xfer_user}${esg_dist_url}]"
