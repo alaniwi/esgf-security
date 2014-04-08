@@ -62,7 +62,7 @@ verbatim=0
 esgf_policy_check() {
     [ ! -e "${envfile}" ] && printf "Sorry must be able to source ${envfile}, aborting..." && exit 1
 
-    local esg_dist_url_root=http://198.128.245.140/dist
+    local esg_dist_url_root=${esg_dist_url_root:-"http://dist.ceda.ac.uk/esgf/dist"}
     local esg_dist_url=${esg_dist_url_root}$( ((devel == 1)) && echo "/devel" || echo "")
 
     #Determining the security jar version and name...

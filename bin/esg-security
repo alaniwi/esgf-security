@@ -62,7 +62,7 @@ DEBUG=${DEBUG:-0}
 VERBOSE=${VERBOSE:-0}
 envfile="/etc/esg.env"
 
-esg_dist_url=${esg_dist_url:-"http://198.128.245.140/dist"}
+esg_dist_url=${esg_dist_url:-${esg_dist_url_root:-"http://dist.ceda.ac.uk/esgf/dist"}}
 
 
 #--------------
